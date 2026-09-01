@@ -29,7 +29,7 @@ export function SiteHeader({ compact = false }: { compact?: boolean }) {
       </nav>
       <a
         href={PLAY_URL}
-        className={cn(buttonVariants({ size: "lg" }), "h-11 rounded-full bg-lime px-4 font-extrabold text-ink hover:bg-lime/90 sm:px-5")}
+        className={cn(buttonVariants({ size: "lg" }), "play-button-lime h-11 rounded-full px-4 font-extrabold sm:px-5")}
       >
         <span className="hidden sm:inline">Get the app</span>
         <span className="sm:hidden">Get app</span>

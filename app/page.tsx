@@ -202,7 +202,7 @@ export default function Home() {
 
 function PlayButton({ label, dark = false }: { label: string; dark?: boolean }) {
   return (
-    <a href={PLAY_URL} className={cn(buttonVariants({ size: "lg" }), "h-14 rounded-full px-7 text-base font-extrabold", dark ? "bg-forest-deep text-white hover:bg-forest" : "bg-lime text-ink shadow-[0_10px_30px_rgba(223,255,63,.20)] hover:bg-lime/90")}>
+    <a href={PLAY_URL} className={cn(buttonVariants({ size: "lg" }), "h-14 rounded-full px-7 text-base font-extrabold", dark ? "play-button-dark" : "play-button-lime shadow-[0_10px_30px_rgba(223,255,63,.20)]")}>
       {label} <ArrowUpRight />
     </a>
   );
